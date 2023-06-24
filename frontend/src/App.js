@@ -1,30 +1,14 @@
 import React from 'react';
-import { Switch, Route, Link } from 'react-router-dom';
-import RecipeList from './RecipeList';
-import RecipeForm from './RecipeForm';
+import { Switch, Route, Link } from 'react';
+import RecipeList from './components/RecipeList';
+import RecipeForm from './components/RecipeForm';
+
 
 function App() {
   return (
     <div>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/add">Add Recipe</Link>
-          </li>
-        </ul>
-      </nav>
-
-      <Switch>
-        <Route path="/add">
-          <RecipeForm />
-        </Route>
-        <Route path="/">
-          <RecipeList />
-        </Route>
-      </Switch>
+      <h1 style={{color: "red"}}>Hello Style!</h1>
+      <p>Add a little style!</p>
     </div>
   );
 }
