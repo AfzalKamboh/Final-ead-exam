@@ -7,8 +7,13 @@ import RecipeForm from './components/RecipeForm';
 function App() {
   return (
     <div>
-      <h1 style={{color: "red"}}>Hello Style!</h1>
-      <p>Add a little style!</p>
+      <nav>
+        <ul>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+        </ul>
+      </nav>
     </div>
   );
 }
